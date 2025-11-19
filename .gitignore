@@ -1,2 +1,9 @@
 # python env
 /env
+
+#env
+.env
+
+#frontend
+node_modules
+data
