@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'parsee.urls'
+ROOT_URLCONF = 'parsee_project.urls'
 
 TEMPLATES = [
     {
@@ -76,10 +76,11 @@ WSGI_APPLICATION = 'parsee.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        "OPTIONS": { #optimizations can be done later if needed see this: https://docs.djangoproject.com/en/5.2/ref/databases/#:~:text=PostgreSQL%20notes
-            "service": "my_service",
-            "passfile": ".my_pgpass",
-        }
+        'NAME' : config('DB_NAME'),
+        'USER' : config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT'),
     }
 }
 
