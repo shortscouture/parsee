@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'parsee.wsgi.application'
+WSGI_APPLICATION = 'parsee_project.wsgi.application'
 
 
 # Database
