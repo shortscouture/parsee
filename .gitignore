@@ -7,3 +7,8 @@
 #frontend
 node_modules
 data
+
+#db
+.my_pgpass
+.pg_service.conf
+.pg_service
