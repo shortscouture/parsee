@@ -1,6 +1,11 @@
 # python env
 /env
 
+# misc files
+__pycache__
+__pycache__/
+.idea
+
 #env
 .env
 
